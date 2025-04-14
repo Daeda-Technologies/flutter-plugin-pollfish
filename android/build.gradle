@@ -8,12 +8,13 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.0.0'
+        classpath 'com.android.tools.build:gradle:8.0.0'
     }
 }
 
 rootProject.allprojects {
     repositories {
+        
         google()
         mavenCentral()
         mavenLocal()
@@ -23,15 +24,14 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 31
-
     namespace 'com.pollfish.flutter'
+    compileSdkVersion 33
 
     defaultConfig {
-        minSdkVersion 19
+        minSdkVersion 21
     }
 }
 
 dependencies {
-    implementation 'com.pollfish:pollfish-googleplay:6.5.0'
+    implementation 'com.pollfish:flutter_pollfish:6.5.0'
 }
