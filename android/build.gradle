@@ -33,5 +33,5 @@ android {
 }
 
 dependencies {
-    implementation 'com.pollfish:flutter_pollfish:6.5.0'
+   
 }
